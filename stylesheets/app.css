@@ -38,7 +38,7 @@ b, strong {
 	color: #222; }
 
 #twitter a {
-	display: block;
+	display: inline-block;
 	background: url(../images/twitter.png) no-repeat;
 	height: 16px;
 	width: 20px; }
