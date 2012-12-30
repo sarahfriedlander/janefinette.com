@@ -69,6 +69,5 @@ b, strong {
 ----------------------------------------- */
 #aboutHeader {
 	height: 250px;
-	background: white url(../images/header.jpg) no-repeat left top;
-	background-size: cover;
+	background: white url(../images/header.jpg) no-repeat left center;
 }
