@@ -45,6 +45,7 @@ b, strong {
 
 #twitter a:hover {
 	background-position: 0 -16px; }
+
 /* -----------------------------------------
    Home
 ----------------------------------------- */
@@ -62,3 +63,12 @@ b, strong {
 	padding-top: 200px;
 	color: #FFF;
 	font-weight: 700; }
+
+/* -----------------------------------------
+   About
+----------------------------------------- */
+#aboutHeader {
+	height: 250px;
+	background: white url(../images/header.jpg) no-repeat left top;
+	background-size: cover;
+}
