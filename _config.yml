@@ -1,6 +1,7 @@
 name: Jane Finette
 description: Personal Site for Jane Finette
 url: http://pfinette.github.com/janefinette/
+baseurl: http://pfinette.github.com/janefinette/
 
 markdown: rdiscount
 
