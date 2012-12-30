@@ -37,13 +37,13 @@ b, strong {
 #header h6 a:hover {
 	color: #222; }
 
-a.twitter {
+.twitter a {
 	display: block;
 	background: url(../images/twitter.png) no-repeat;
 	height: 16px;
 	width: 20px; }
 
-a.twitter:hover {
+.twitter a:hover {
 	background-position: 0 -16px; }
 /* -----------------------------------------
    Home
