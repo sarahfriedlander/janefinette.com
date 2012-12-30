@@ -1,29 +1,57 @@
-/* Artfully masterminded by ZURB  */
-
-/* -------------------------------------------------- 
-   Table of Contents
------------------------------------------------------
-:: Shared Styles
-:: Page Name 1
-:: Page Name 2
-*/
-
-
 /* -----------------------------------------
    Shared Styles
 ----------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,300italic);
 
+body {
+		background: white url(../images/bg.jpg) no-repeat left top;
+		background-size: cover; }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400; }
+
+p, em {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300; }
+
+b, strong {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400; }
+
+#header {
+	background-color: #FFF;
+	height: 125px; }
+
+#header h3, #header h6 {
+	line-height: 100px; }
+
+#header h3 a {
+	color: #222; }
+
+#header h3 a:hover {
+	color: #AAA; }
+
+#header h6 {
+	font-weight: 300; }
+
+#header h6 a {
+	color: #AAA; }
+
+#header h6 a:hover {
+	color: #222; }
 
 /* -----------------------------------------
-   Page Name 1
+   Home
 ----------------------------------------- */
+#home hr {
+	border-color: #FFF;
+	border-width: 4px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto; }
 
-
-
-
-/* -----------------------------------------
-   Page Name 2
------------------------------------------ */
-
-
+#home h1 {
+	margin: 200px 0;
+	color: #FFF;
+	font-weight: 700; }
