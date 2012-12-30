@@ -37,7 +37,7 @@ b, strong {
 #header h6 a:hover {
 	color: #222; }
 
-#twitter {
+#twitter a {
 	display: block;
 	background: url(../images/twitter.png) no-repeat;
 	height: 16px;
