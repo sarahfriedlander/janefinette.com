@@ -3,10 +3,6 @@
 ----------------------------------------- */
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,300italic);
 
-body {
-		background: white url(../images/bg.jpg) no-repeat left top;
-		background-size: cover; }
-
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 400; }
@@ -44,14 +40,18 @@ b, strong {
 /* -----------------------------------------
    Home
 ----------------------------------------- */
-#home hr {
+#home body {
+	background: white url(../images/bg.jpg) no-repeat left top;
+	background-size: cover; }
+
+#homePromo hr {
 	border-color: #FFF;
 	border-width: 4px;
 	width: 300px;
 	margin-left: auto;
 	margin-right: auto; }
 
-#home h1 {
+#homePromo h1 {
 	margin: 200px 0;
 	color: #FFF;
 	font-weight: 700; }
