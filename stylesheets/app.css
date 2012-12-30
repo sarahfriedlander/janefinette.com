@@ -46,7 +46,7 @@ b, strong {
 #twitter a:hover {
 	background-position: 0 -16px; }
 
-.pullquote h3 {
+.pullquote h3, .pullquote h4 {
 	margin-top: 0; }
 
 /* -----------------------------------------
