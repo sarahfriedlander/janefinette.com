@@ -46,6 +46,9 @@ b, strong {
 #twitter a:hover {
 	background-position: 0 -16px; }
 
+.pullquote {
+	margin-top: 0; }
+
 /* -----------------------------------------
    Home
 ----------------------------------------- */
