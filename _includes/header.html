@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>		<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>		<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Pascal Finette // {{ page.title }}</title>
+	
+	<!-- Included CSS Files (Compressed) -->
+	<link rel="stylesheet" href="http://finette.com/stylesheets/foundation.min.css">
+	<link rel="stylesheet" href="http://finette.com/stylesheets/app.css">
+
+	<script src="http://finette.com/javascripts/modernizr.foundation.js"></script>
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- The all-so-important FavIcon -->
+	<link rel="icon" type="image/png" href="http://finette.com/images/favicon.png">
+
+	<!-- The all-so-important FavIcon -->
+	<link rel="alternate" type="application/rss+xml"  href="{{ site.url }}/feed.xml" title="Pascal Finette // Blog. // RSS Feed">
+
+	<!-- Analytics -->
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-83219-24']);
+		_gaq.push(['_setDomainName', 'finette.com']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+</head>
+<body id="home">
+
+<!-- ~~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~~ -->
+<div class="row" id="header">
+	<div class="two columns">
+		<a href="http://finette.com/"><img src="http://finette.com/images/pascal.png" alt="Pascal Finette"></a>
+	</div>
+	<div class="ten columns text-right">
+		<h4><a href="http://finette.com/about/">About</a> // Blog // <a href="http://finette.com/contact/">Contact</a> // <a href="https://twitter.com/pfinette"><img src="http://finette.com/images/twitter.png" alt="Follow me on Twitter"></a></h4>
+		<h6>Projects: <a href="http://mentorforgood.org/">Mentor for Good</a> // <a href="http://gyshido.com/">GyShiDo</a> // <a href="http://theheretic.me/">The Heretic</a></h6>
+	</div>
+</div>
+<!-- ~~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~~ -->
