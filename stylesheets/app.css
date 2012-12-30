@@ -70,4 +70,12 @@ b, strong {
 #aboutHeader {
 	height: 250px;
 	background: white url(../images/header.jpg) no-repeat left center;
-}
+	margin-bottom: 25px; }
+
+/* -----------------------------------------
+   Work
+----------------------------------------- */
+#workHeader {
+	height: 250px;
+	background: white url(../images/header.jpg) no-repeat left center;
+	margin-bottom: 25px; }
