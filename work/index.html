@@ -2,38 +2,40 @@
 layout: default
 title: Work
 id: work
+current:
+ - url: thecommunityfactor.png
+   company: The Community Factor
+   role: Founder
+   country: USA
+   info: We build extraordinary communities and movements
+   link: http://thecommunityfactor.com/
+ - url: thecommunityalliance.png
+   company: The Community Alliance
+   role: Founder
+   country: USA
+   info: Global group driving fundamental change in business practice to include community participation
+   link: http://thecommunityalliance.org/
 ---
 <div id="headerWork"></div>
 
 <div class="row">
 	<div class="nine columns">
 		<ul class="block-grid three-up">
-			<li>
-				<div class="small-container">
-					<a href="http://thecommunityfactor.com/"><img src="{{ site.baseurl }}/images/current/thecommunityfactor.png" alt="The Community Factor"></a>
-					<div>
-						<h5>The Community Factor</h5>
-						<p>
-							Role: Founder<br />
-							Country: USA<br />
-							Info: We build extraordinary communities and movements
-						</p>
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class="small-container">
-					<a href="http://thecommunityalliance.org/"><img src="{{ site.baseurl }}/images/current/thecommunityalliance.png" alt="The Community Alliance"></a>
-					<div>
-						<h5>The Community Alliance</h5>
-						<p>
-							Role: Founder<br />
-							Country: USA<br />
-							Info: Global group driving fundamental change in business practice to include community participation
-						</p>
-					</div>
-				</div>
-			</li>
+      {% for pic in page.current %}
+      <li>
+        <div class="small-container">
+          {% if pic.link != null %}<a href="{{ pic.link }}">{% endif %}<img src="{{ site.baseurl }}/images/current/{{ pic.url }}" alt="{{ pic.company }}">{% if pic.link != null %}</a>{% endif %}
+          <div>
+            <h5>{{ pic.company }}</h5>
+            <p>
+            	Role: {{ pic.role }}<br />
+            	Country: {{ pic.country }}<br />
+            	Info: {{ pic.info }}
+            </p>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
 		</ul>
 	</div>
 	<div class="three columns text-right pullquote">
