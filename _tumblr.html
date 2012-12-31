@@ -12,234 +12,69 @@
 	<title>Jane Finette : Blog {block:PostSummary}: {PostSummary}{/block:PostSummary}</title>
 		
 	<!-- Included CSS Files (Compressed) -->
-	<link rel="stylesheet" href="http://janefinette.com/stylesheets/foundation.min.css" />
-	<link rel="stylesheet" href="http://janefinette.com/stylesheets/app.css" />
+	<link rel="stylesheet" href="http://pfinette.github.com/janefinette/stylesheets/foundation.min.css" />
+	<link rel="stylesheet" href="http://pfinette.github.com/janefinette/stylesheets/app.css" />
 
-	<script src="http://janefinette.com/javascripts/modernizr.foundation.js"></script>
+	<script src="http://pfinette.github.com/janefinette/javascripts/modernizr.foundation.js"></script>
+
+	<!-- RSS Feed -->
+	<link rel="alternate" type="application/rss+xml" href="{RSS}" />
 </head>
 <body id="blog">
 
 <div id="header">
 	<div class="row">
 		<div class="six columns">
-			<h3><a href="http://janefinette.com/">JANE FINETTE</a></h3>
+			<h3><a href="http://pfinette.github.com/janefinette/">JANE FINETTE</a></h3>
 		</div>
 		<div class="six columns text-right">
-			<h6><a href="http://janefinette.com/about/">ABOUT</a>&nbsp;&nbsp;&nbsp;<a href="http://janefinette.com/work/">WORK</a>&nbsp;&nbsp;&nbsp;BLOG&nbsp;&nbsp;&nbsp;<a href="http://janefinette.com/contact/">CONTACT</a>&nbsp;&nbsp;&nbsp;<span id="twitter"><a href="https://twitter.com/janefinette"> </a></span></h6>
+			<h6><a href="http://pfinette.github.com/janefinette/about/">ABOUT</a>&nbsp;&nbsp;&nbsp;<a href="http://pfinette.github.com/janefinette/work/">WORK</a>&nbsp;&nbsp;&nbsp;BLOG&nbsp;&nbsp;&nbsp;<a href="http://pfinette.github.com/janefinette/contact/">CONTACT</a>&nbsp;&nbsp;&nbsp;<span id="twitter"><a href="https://twitter.com/janefinette"> </a></span></h6>
 		</div>
 	</div>
 </div>
 
+<!-- CONTENT -->
+<div id="headerBlog"></div>
 
-
-
-
-
-
-<!DOCTYPE html>
-
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>		<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>		<html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8" />
-
-	<!-- Set the viewport width to device width for mobile -->
-	<meta name="viewport" content="width=device-width" />
-
-	<title>Pascal Finette // Blog. {block:PostSummary}// {PostSummary}{/block:PostSummary}</title>
-	
-	<!-- Included CSS Files (Compressed) -->
-	<link rel="stylesheet" href="http://finette.com/stylesheets/foundation.min.css">
-	<link rel="stylesheet" href="http://finette.com/stylesheets/app.css">
-
-	<script src="http://finette.com/javascripts/modernizr.foundation.js"></script>
-
-	<!-- IE Fix for HTML5 Tags -->
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<!-- RSS Feed -->
-	<link rel="alternate" type="application/rss+xml" href="{RSS}">
-
-	<!-- The all-so-important FavIcon -->
-	<link rel="icon" type="image/png" href="http://finette.com/images/favicon.png">
-
-	{block:PermalinkPage}
-	<!-- OpenGraph Tags -->
-	<meta property="og:title" content="Pascal Finette // Blog. {block:PostSummary}// {PostSummary}{/block:PostSummary}" />
-	<meta property="og:url" content="{Permalink}" />
-	<meta property="og:type" content="tumblr-feed:entry" />
-	<meta property="og:image" content="http://finette.com/images/pascal.png" />
-	<meta property="og:site_name" content="finette.com" />
-	{/block:PermalinkPage}
-	
-	<!-- Analytics -->
-	<script type="text/javascript">
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-83219-24']);
-	_gaq.push(['_setDomainName', 'finette.com']);
-	_gaq.push(['_trackPageview']);
-
-	(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();
-	</script>
-</head>
-<body id="blog">
-
-<!-- ~~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~~ -->
-<div class="row" id="header">
-	<div class="two columns">
-		<a href="http://finette.com/"><img src="http://finette.com/images/pascal.png" alt="Pascal Finette"></a>
-	</div>
-	<div class="ten columns text-right">
-		<h4><a href="http://finette.com/work/">Work</a> // Blog // <a href="http://finette.com/contact/">Contact</a> // <a href="https://twitter.com/pfinette"><img src="http://finette.com/images/twitter.png" alt="Follow me on Twitter"></a></h4>
-		<h6>Projects: <a href="http://mentorforgood.org/">Mentor for Good</a> // <a href="http://gyshido.com/">GyShiDo</a></h6>
-	</div>
-</div>
-<!-- ~~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~~ -->
-
-<!-- ~~~~~~~~~~~~~~~~~~~~ TAGLINE ~~~~~~~~~~~~~~~~~~~~ -->
-<div class="row">
-	<div class="twelve columns">
-		<hr>
-	</div>
-</div>
-
-{block:IndexPage} <!-- Show this only when we're on the list view, not the article view -->
-<div class="row">
-	<div class="twelve columns text-center">
-		<h1>Thoughts.</h1>
-	</div>
-</div>
-<div class="row">
-	<div class="twelve columns">
-		<hr>
-	</div>
-</div>
-<div class="row">
-	<div class="twelve columns text-center">
-		 <h6>
-			 <img src="http://finette.com/images/heart.png" alt="<3">&nbsp;&nbsp;
-			 <a href="http://blog.finette.com/post/33448457971/tedx-orange-coast" title="TEDx Orange Coast">TEDx Orange Coast</a>&nbsp;&nbsp;//&nbsp;&nbsp;
-			 <a href="http://blog.finette.com/post/11370209405/never-walk-a-talk-about-entrepreneurship-and-running" title="Never Walk - A talk about entrepreneurship and running">Never Walk - A talk about entrepreneurship & running</a>
-			</h6>
-	 </div>
-</div>
-{/block:IndexPage}
-
-{block:PermalinkPage} <!-- Show this only when we're on the article view, not the list view -->
-<div class="row">
-	<div class="twelve columns text-center">
-		<h6><a href="http://blog.finette.com/" title="See more articles">Blog</a> &rarr; {block:PostSummary}{PostSummary}{/block:PostSummary}</h6>
-	</div>
-</div>
-{/block:PermalinkPage} 
-
-<div class="row">
-	<div class="twelve columns">
-		<hr>
-	</div>
-</div>
-<!-- ~~~~~~~~~~~~~~~~~~~~ TAGLINE ~~~~~~~~~~~~~~~~~~~~ -->
-
-
-<!-- ~~~~~~~~~~~~~~~~~~~~ CONTENT ~~~~~~~~~~~~~~~~~~~~ -->
 {block:Posts} <!-- tumblr starts here -->
 
 	{block:Text}
 	<div class="row">
-		<div class="nine columns">
-			{block:Title}<h2><a href="{Permalink}" title="{Title}">{Title}</a></h2>{/block:Title}
+		<div class="twelve columns">
+			{block:PermalinkPage} <!-- Show this only when we're on the article view, not the list view -->
+				<h2><a href="http://blog.janefinette.com/" title="See more articles">Blog</a> &rarr; {block:PostSummary}{PostSummary}{/block:PostSummary}</h2>
+			{/block:PermalinkPage}			
+
+			{block:IndexPage} <!-- Show this only when we're on the list view, not the article view -->
+				{block:Title}<h2><a href="{Permalink}" title="{Title}">{Title}</a></h2>{/block:Title}
+			{/block:IndexPage}
 		</div>
 	</div>
+
 	<div class="row">
 		<div class="nine columns">
 			{Body}
 		</div>
+		<div class="three columns">
+			<div class="blogMeta">
+				{block:Date}<p>{ShortDayOfWeek}, {ShortMonth} {DayOfMonth}{DayOfMonthSuffix}, {Year}</p>{/block:Date}
+				<p><a class="dsq-comment-count" href="{Permalink}#disqus_thread" article_id="{PostID}">Comments</a><br><span class="secondary radius label"><a href="{Permalink}#comments">Leave a Comment</a></span><script type="text/javascript">
+					var disqus_shortname = 'janefinette';
+					/* * * DON'T EDIT BELOW THIS LINE * * */
+					(function () {
+						var s = document.createElement('script'); s.async = true;
+						s.type = 'text/javascript';
+						s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+						(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+					}());
+				</script></p>
+				{block:HasTags}<p><strong>Tags:</strong><br>{block:Tags}<span class="secondary radius label"><a href="{TagURLChrono}">{Tag}</a></span> {/block:Tags}</p>{/block:HasTags}
+				{block:PermalinkPage}<p><a class="tiny radius blue button" href="http://blog.janefinette.com/">&larr; Back</a></p>{/block:PermalinkPage}
+			</div>
+		</div>
+		<hr />
+	</div>
 	{/block:Text}
-
-	{block:Quote}
-	<div class="row">
-		<div class="nine columns">
-			<h2><a href="{Permalink}" title="Quote of the Day">Quote of the Day</a></h2>
-		</div>
-	</div>
-	<div class="row">
-		<div class="nine columns">
-			<blockquote>{Quote}{block:Source}<cite>{Source}</cite>{/block:Source}</blockquote>
-		</div>
-	{/block:Quote}
-
-	{block:Link}
-	<div class="row">
-		<div class="nine columns">
-			<h2><a href="{URL}">{Name}</a></h2>
-		</div>
-	</div>
-	<div class="row">
-		<div class="nine columns">
-			{block:Description}{Description}{/block:Description}
-			<p><strong>Link:</strong> <a href="{URL}">{URL}</a></p>
-		</div>
-	{/block:Link}
-
-	{block:Photo}
-	<div class="row">
-		<div class="nine columns">
-			<h2><a href="{Permalink}" title="Picture of the Day">Picture of the Day</a></h2>
-		</div>
-	</div>
-	<div class="row">
-		<div class="nine columns">
-			<p><img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"></p>
-			{block:Caption}<p>{Caption}</p>{/block:Caption}
-		</div>
-	{/block:Photo}
-
-	{block:Video}
-	<div class="row">
-		<div class="nine columns">
-			<h2><a href="{Permalink}" title="Video of the Day">Video of the Day</a></h2>
-		</div>
-	</div>
-	<div class="row">
-		<div class="nine columns">
-			<p><div class="flex-video">{Video-500}</div></p>
-			{block:Caption}<p>{Caption}</p>{/block:Caption}
-		</div>
-	{/block:Video}
-
-	<div class="three columns">
-		<div class="blogMeta">
-			{block:Date}<p>{ShortDayOfWeek}, {ShortMonth} {DayOfMonth}{DayOfMonthSuffix}, {Year}</p>{/block:Date}
-			<p><a class="dsq-comment-count" href="{Permalink}#disqus_thread" article_id="{PostID}">Comments</a><br><span class="secondary radius label"><a href="{Permalink}#comments">Leave a Comment</a></span><script type="text/javascript">
-				var disqus_shortname = 'pfinette';
-				/* * * DON'T EDIT BELOW THIS LINE * * */
-				(function () {
-					var s = document.createElement('script'); s.async = true;
-					s.type = 'text/javascript';
-					s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-					(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-				}());
-			</script></p>
-			{block:HasTags}<p><strong>Tags:</strong><br>{block:Tags}<span class="secondary radius label"><a href="{TagURLChrono}">{Tag}</a></span> {/block:Tags}</p>{/block:HasTags}
-			{block:PermalinkPage}<p><a class="tiny radius blue button" href="http://blog.finette.com/">&larr; Back</a></p>{/block:PermalinkPage}
-		</div>
-	</div>
-</div>
-
-<div class="row">
-	<div class="twelve columns">
-		<hr>
-	</div>
-</div>
 
 {/block:Posts}
 
@@ -249,7 +84,7 @@
 	<div class="nine columns">
 		<div id="disqus_thread"></div>
 		<script type="text/javascript">
-				var disqus_shortname = 'pfinette';
+				var disqus_shortname = 'janefinette';
 				var disqus_url = '{Permalink}';
 				var disqus_title = '{block:PostTitle}{PostTitle}{/block:PostTitle}';
 		
@@ -274,7 +109,7 @@
 			{block:NextPage}<a class="small radius secondary button" href="{NextPage}">&larr; Older</a>{/block:NextPage}
 			{block:PreviousPage}&nbsp;&nbsp;<a class="small radius secondary button" href="{PreviousPage}">Newer &rarr;</a>{/block:PreviousPage}
 		{/block:Pagination}
-		<span style="float:right;"><a class="small radius secondary button" href="http://blog.finette.com/archive">Archive</a></span>
+		<span style="float:right;"><a class="small radius secondary button" href="http://blog.janefinette.com/archive">Archive</a></span>
 	</div>
 	<div class="three columns">
 		<div style="margin-top:-12px;">
@@ -283,27 +118,17 @@
 	</div>
 </div>
 {/block:IndexPage}
-<!-- ~~~~~~~~~~~~~~~~~~~~ CONTENT ~~~~~~~~~~~~~~~~~~~~ -->
+<!-- CONTENT -->
 
-<!-- ~~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~ -->
-<div class="row">
-	<div class="twelve columns">
-		<hr>
-	</div>
-</div>
-<div class="row">
-	<div class="twelve rows text-center">
-		<h6>Made with <a href="http://janefinette.com/"><img src="http://finette.com/images/heart.png" alt="Love"></a> in Saratoga, CA.</h6>
-	</div>
-</div>
-<!-- ~~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~ -->
+<hr />
+<div class="text-center"><p>Made with <span style="color:red;">&hearts;</span> in Saratoga, CA.</div>
 
 <!-- Included JS Files (Compressed) -->
-<script src="http://finette.com/javascripts/jquery.js"></script>
-<script src="http://finette.com/javascripts/foundation.min.js"></script>
+<script src="http://pfinette.github.com/janefinette/javascripts/jquery.js"></script>
+<script src="http://pfinette.github.com/janefinette/javascripts/foundation.min.js"></script>
 
 <!-- Initialize JS Plugins -->
-<script src="http://finette.com/javascripts/app.js"></script>
+<script src="http://pfinette.github.com/janefinette/javascripts/app.js"></script>
 
 </body>
 </html>
