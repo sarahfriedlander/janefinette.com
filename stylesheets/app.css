@@ -78,7 +78,15 @@ b, strong {
 /* -----------------------------------------
    Work
 ----------------------------------------- */
-#workHeader {
+#headerWork {
 	height: 250px;
-	background: white url(../images/header.jpg) no-repeat left center;
+	background: white url(../images/headerWork.jpg) no-repeat right center;
+	margin-bottom: 25px; }
+
+/* -----------------------------------------
+   Contact
+----------------------------------------- */
+#headerContact {
+	height: 250px;
+	background: white url(../images/headerContact.jpg) no-repeat center center;
 	margin-bottom: 25px; }
