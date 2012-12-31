@@ -123,7 +123,7 @@ past:
       {% for pic in page.past %}
       <li>
         <div class="small-container">
-          {% if pic.link != null %}<a href="{{ pic.link }}">{% endif %}<img src="{{ site.baseurl }}/images/current/{{ pic.url }}" alt="{{ pic.company }}">{% if pic.link != null %}</a>{% endif %}
+          {% if pic.link != null %}<a href="{{ pic.link }}">{% endif %}<img src="{{ site.baseurl }}/images/past/{{ pic.url }}" alt="{{ pic.company }}">{% if pic.link != null %}</a>{% endif %}
           <div>
             <h5>{{ pic.company }}</h5>
             <p>
