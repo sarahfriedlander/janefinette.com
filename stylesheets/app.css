@@ -70,9 +70,9 @@ b, strong {
 /* -----------------------------------------
    About
 ----------------------------------------- */
-#aboutHeader {
+#headerAbout {
 	height: 250px;
-	background: white url(../images/header.jpg) no-repeat left center;
+	background: white url(../images/headerAbout.jpg) no-repeat right top;
 	margin-bottom: 25px; }
 
 /* -----------------------------------------
