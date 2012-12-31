@@ -130,3 +130,11 @@ b, strong {
 	height: 250px;
 	background: white url(../images/headerContact.jpg) no-repeat center center;
 	margin-bottom: 25px; }
+
+/* -----------------------------------------
+   404
+----------------------------------------- */
+#header404 {
+	height: 250px;
+	background: white url(../images/header404.jpg) no-repeat center center;
+	margin-bottom: 25px; }
