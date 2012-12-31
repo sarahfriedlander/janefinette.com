@@ -156,11 +156,10 @@ other:
         <div class="small-container">
           {% if pic.link != null %}<a href="{{ pic.link }}">{% endif %}<img src="{{ site.baseurl }}/images/workOther/{{ pic.url }}" alt="{{ pic.company }}">{% if pic.link != null %}</a>{% endif %}
           <div>
-            <h5>{{ pic.company }}</h5>
+            <h5>{{ pic.title }}</h5>
             <p>
-               Role: {{ pic.role }}<br />
-               Country: {{ pic.country }}<br />
-               Info: {{ pic.info }}
+               Date: {{ pic.date }}<br />
+               {{ pic.info }}
             </p>
           </div>
         </div>
