@@ -1,8 +1,4 @@
-name: Jane Finette
-description: Personal Site for Jane Finette
 url: http://janefinette.com
-
 markdown: rdiscount
-
 exclude:
 - CNAME
