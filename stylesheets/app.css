@@ -72,7 +72,7 @@ b, strong {
 ----------------------------------------- */
 #headerAbout {
 	height: 250px;
-	background: white url(../images/headerAbout.jpg) no-repeat right top;
+	background: white url(../images/headerAbout.jpg) no-repeat left top;
 	margin-bottom: 25px; }
 
 /* -----------------------------------------
