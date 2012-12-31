@@ -116,17 +116,17 @@ b, strong {
 	font-size: 15px; }
 
 /* -----------------------------------------
-   Contact
------------------------------------------ */
-#headerContact {
-	height: 250px;
-	background: white url(../images/headerContact.jpg) no-repeat center center;
-	margin-bottom: 25px; }
-
-/* -----------------------------------------
    Blog
 ----------------------------------------- */
 #headerBlog {
 	height: 250px;
 	background: #FEC77F url(../images/headerBlog.jpg) no-repeat center center;
+	margin-bottom: 25px; }
+
+/* -----------------------------------------
+   Contact
+----------------------------------------- */
+#headerContact {
+	height: 250px;
+	background: white url(../images/headerContact.jpg) no-repeat center center;
 	margin-bottom: 25px; }
