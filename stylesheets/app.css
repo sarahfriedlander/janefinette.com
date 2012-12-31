@@ -83,6 +83,10 @@ b, strong {
 	background: white url(../images/headerWork.jpg) no-repeat center center;
 	margin-bottom: 25px; }
 
+#work li img {
+	border: 1px solid #AAA;
+}
+
 /* -----------------------------------------
    Contact
 ----------------------------------------- */
