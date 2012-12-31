@@ -83,8 +83,28 @@ b, strong {
 	background: white url(../images/headerWork.jpg) no-repeat center center;
 	margin-bottom: 25px; }
 
-#work li img {
-	border: 1px solid #AAA;
+.small-container {
+	width: 214px;
+	height: 214px;
+	border: 1px solid #AAA; }
+	
+.small-container img {
+	filter: none;
+	-webkit-filter: grayscale(0);
+	opacity: 1 }
+
+.small-container img:hover {
+	filter: url(filters.svg#grayscale);
+	filter: gray;
+	-webkit-filter: grayscale(1);
+	opacity: 0.20; 
+	-webkit-transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	transition: opacity .25s ease-in-out; }
+
+.small-container div {
+	margin-top: -214px;
+	padding: 0 5px;
 }
 
 /* -----------------------------------------
