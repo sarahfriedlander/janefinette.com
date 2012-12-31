@@ -12,10 +12,10 @@
 	<title>Jane Finette : Blog {block:PostSummary}: {PostSummary}{/block:PostSummary}</title>
 		
 	<!-- Included CSS Files (Compressed) -->
-	<link rel="stylesheet" href="http://pfinette.github.com/janefinette/stylesheets/foundation.min.css" />
-	<link rel="stylesheet" href="http://pfinette.github.com/janefinette/stylesheets/app.css" />
+	<link rel="stylesheet" href="http://janefinette.com/stylesheets/foundation.min.css" />
+	<link rel="stylesheet" href="http://janefinette.com/stylesheets/app.css" />
 
-	<script src="http://pfinette.github.com/janefinette/javascripts/modernizr.foundation.js"></script>
+	<script src="http://janefinette.com/javascripts/modernizr.foundation.js"></script>
 
 	<!-- RSS Feed -->
 	<link rel="alternate" type="application/rss+xml" href="{RSS}" />
@@ -25,10 +25,10 @@
 <div id="header">
 	<div class="row">
 		<div class="six columns">
-			<h3><a href="http://pfinette.github.com/janefinette/">JANE FINETTE</a></h3>
+			<h3><a href="http://janefinette.com/">JANE FINETTE</a></h3>
 		</div>
 		<div class="six columns text-right">
-			<h6><a href="http://pfinette.github.com/janefinette/about/">ABOUT</a>&nbsp;&nbsp;&nbsp;<a href="http://pfinette.github.com/janefinette/work/">WORK</a>&nbsp;&nbsp;&nbsp;BLOG&nbsp;&nbsp;&nbsp;<a href="http://pfinette.github.com/janefinette/contact/">CONTACT</a>&nbsp;&nbsp;&nbsp;<span id="twitter"><a href="https://twitter.com/janefinette"> </a></span></h6>
+			<h6><a href="http://janefinette.com/about/">ABOUT</a>&nbsp;&nbsp;&nbsp;<a href="http://janefinette.com/work/">WORK</a>&nbsp;&nbsp;&nbsp;BLOG&nbsp;&nbsp;&nbsp;<a href="http://janefinette.com/contact/">CONTACT</a>&nbsp;&nbsp;&nbsp;<span id="twitter"><a href="https://twitter.com/janefinette"> </a></span></h6>
 		</div>
 	</div>
 </div>
@@ -58,7 +58,7 @@
 		<div class="three columns">
 			<div class="blogMeta">
 				{block:Date}<p>{ShortDayOfWeek}, {ShortMonth} {DayOfMonth}{DayOfMonthSuffix}, {Year}</p>{/block:Date}
-				<p><a class="dsq-comment-count" href="{Permalink}#disqus_thread" article_id="{PostID}">Comments</a><br><span class="secondary radius label"><a href="{Permalink}#comments">Leave a Comment</a></span><script type="text/javascript">
+				<p><a class="dsq-comment-count" href="{Permalink}#disqus_thread" article_id="{PostID}">Comments</a><script type="text/javascript">
 					var disqus_shortname = 'janefinette';
 					/* * * DON'T EDIT BELOW THIS LINE * * */
 					(function () {
@@ -68,7 +68,7 @@
 						(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 					}());
 				</script></p>
-				{block:HasTags}<p><strong>Tags:</strong><br>{block:Tags}<span class="secondary radius label"><a href="{TagURLChrono}">{Tag}</a></span> {/block:Tags}</p>{/block:HasTags}
+				{block:HasTags}<p><strong>Tags:</strong><br />{block:Tags}<span class="secondary radius label"><a href="{TagURLChrono}">{Tag}</a></span> {/block:Tags}</p>{/block:HasTags}
 				{block:PermalinkPage}<p><a class="tiny radius blue button" href="http://blog.janefinette.com/">&larr; Back</a></p>{/block:PermalinkPage}
 			</div>
 		</div>
@@ -78,31 +78,32 @@
 
 {/block:Posts}
 
-<!-- ~~~~~~~~~~~~~~~~~~~~ DISQUS ~~~~~~~~~~~~~~~~~~~~ -->
-{block:PermalinkPage}
+<!-- DISQUS -->
+{block:PermalinkPage} <!-- Show this only when we're on the article view, not the list view -->
 <div class="row" id="comments">
 	<div class="nine columns">
 		<div id="disqus_thread"></div>
 		<script type="text/javascript">
-				var disqus_shortname = 'janefinette';
-				var disqus_url = '{Permalink}';
-				var disqus_title = '{block:PostTitle}{PostTitle}{/block:PostTitle}';
-		
-				/* * * DON'T EDIT BELOW THIS LINE * * */
-				(function() {
-						var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-						dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-						(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-				})();
+			var disqus_shortname = 'janefinette';
+			var disqus_url = '{Permalink}';
+			var disqus_title = '{block:PostTitle}{PostTitle}{/block:PostTitle}';
+	
+			/* * * DON'T EDIT BELOW THIS LINE * * */
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
 		</script>
 		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 		<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 	</div>
 </div>
 {/block:PermalinkPage}
-<!-- ~~~~~~~~~~~~~~~~~~~~ DISQUS ~~~~~~~~~~~~~~~~~~~~ -->
+<!-- DISQUS -->
 
-{block:IndexPage}
+<!-- PAGINATION -->
+{block:IndexPage} <!-- Show this only when we're on the list view, not the article view -->
 <div class="row">
 	<div class="nine columns">
 		{block:Pagination}
@@ -118,17 +119,19 @@
 	</div>
 </div>
 {/block:IndexPage}
+<!-- PAGINATION -->
+
 <!-- CONTENT -->
 
 <hr />
 <div class="text-center"><p>Made with <span style="color:red;">&hearts;</span> in Saratoga, CA.</div>
 
 <!-- Included JS Files (Compressed) -->
-<script src="http://pfinette.github.com/janefinette/javascripts/jquery.js"></script>
-<script src="http://pfinette.github.com/janefinette/javascripts/foundation.min.js"></script>
+<script src="http://janefinette.com/javascripts/jquery.js"></script>
+<script src="http://janefinette.com/javascripts/foundation.min.js"></script>
 
 <!-- Initialize JS Plugins -->
-<script src="http://pfinette.github.com/janefinette/javascripts/app.js"></script>
+<script src="http://janefinette.com/javascripts/app.js"></script>
 
 </body>
 </html>
