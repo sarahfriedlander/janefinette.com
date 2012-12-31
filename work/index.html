@@ -33,6 +33,61 @@ current:
    country: USA
    info: Coaching social entrepreneurs over our kitchen table
    link: http://mentorforgood.org/
+past:
+ - url: mozillafirefox.png
+   company: Mozilla Firefox
+   role: Director Worldwide User Engagement
+   country: USA
+   info: Led the User Engagement function for Mozilla products worldwide
+   link: http://www.mozilla.org/en-US/firefox/new/
+ - url: mozilla.png
+   company: Mozilla
+   role: Director European Marketing & Community
+   country: Europe
+   info: Built and managed Mozilla European marketing and community across 32 locales
+   link: http://www.mozilla.org/en-US/firefox/new/
+ - url: elektronauten.png
+   company: elektronauten
+   role: Founder & Managing Partner
+   country: Germany & UK
+   info: Interim Management & Consulting Practice
+   link: http://elektronauten.de/
+ - url: channeladvisor.png
+   company: ChannelAdvisor
+   role: Director of International Marketing, PR and Expansion
+   country: EMEA
+   info: Multichannel eCommerce Provider
+   link: http://www.channeladvisor.com/
+ - url: yourart.png
+   company: yourART
+   role: Founder and Managing Director
+   country: Germany
+   info: Contemporary Art Gallery
+   link: 
+ - url: marketworks.png
+   company: Marketworks
+   role: Country Manager
+   country: Germany
+   info: Multichannel eCommerce Provider
+   link: 
+ - url: ebay.png
+   company: eBay
+   role: Business Unit Owner - Computers & Gaming/Collectables
+   country: UK
+   info: Online Marketplace
+   link: http://www.ebay.com/
+ - url: sothebys.png
+   company: Sotheby's
+   role: Online Marketing Executive
+   country: UK
+   info: Fine Art Auctioneers
+   link: http://www.sothebys.com/
+ - url: jungle.png
+   company: Jungle.com
+   role: Jungle Play - Gaming Category Manager
+   country: UK
+   info: eCommerce
+   link: 
 ---
 <div id="headerWork"></div>
 
@@ -65,17 +120,21 @@ current:
 <div class="row">
 	<div class="nine columns">
 		<ul class="block-grid three-up">
-			<li><img src="http://placehold.it/214x214" alt="" /></li>
-			<li><img src="http://placehold.it/214x214" alt="" /></li>
-			<li><img src="http://placehold.it/214x214" alt="" /></li>
-			<li><img src="http://placehold.it/214x214" alt="" /></li>
-			<li><img src="http://placehold.it/214x214" alt="" /></li>
-			<li><img src="http://placehold.it/214x214" alt="" /></li>
-			<li><img src="http://placehold.it/214x214" alt="" /></li>
-			<li><img src="http://placehold.it/214x214" alt="" /></li>
-			<li><img src="http://placehold.it/214x214" alt="" /></li>
-			<li><img src="http://placehold.it/214x214" alt="" /></li>
-			<li><img src="http://placehold.it/214x214" alt="" /></li>
+      {% for pic in page.past %}
+      <li>
+        <div class="small-container">
+          {% if pic.link != null %}<a href="{{ pic.link }}">{% endif %}<img src="{{ site.baseurl }}/images/current/{{ pic.url }}" alt="{{ pic.company }}">{% if pic.link != null %}</a>{% endif %}
+          <div>
+            <h5>{{ pic.company }}</h5>
+            <p>
+            	Role: {{ pic.role }}<br />
+            	Country: {{ pic.country }}<br />
+            	Info: {{ pic.info }}
+            </p>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
 		</ul>
 	</div>
 	<div class="three columns text-right pullquote">
