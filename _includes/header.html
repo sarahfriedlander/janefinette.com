@@ -35,13 +35,17 @@
 </head>
 <body id="{{ page.id }}">
 
-<div id="header">
-	<div class="row">
-		<div class="six columns">
-			<h3><a href="{{ site.baseurl }}/">JANE FINETTE</a></h3>
-		</div>
-		<div class="six columns text-right">
-			<h6>{% if page.url != '/about/index.html' %}<a href="{{ site.baseurl }}/about/">{% endif %}ABOUT{% if page.url != '/about/index.html' %}</a>{% endif %}&nbsp;&nbsp;&nbsp;{% if page.url != '/work/index.html' %}<a href="{{ site.baseurl }}/work/">{% endif %}WORK{% if page.url != '/work/index.html' %}</a>{% endif %}&nbsp;&nbsp;&nbsp;<a href="http://blog.janefinette.com/">BLOG</a>&nbsp;&nbsp;&nbsp;{% if page.url != '/contact/index.html' %}<a href="{{ site.baseurl }}/contact/">{% endif %}CONTACT{% if page.url != '/contact/index.html' %}</a>{% endif %}&nbsp;&nbsp;&nbsp;<span id="twitter"><a href="https://twitter.com/janefinette"> </a></span></h6>
-		</div>
+<!-- NAVIGATION -->
+<div class="row" id="header">
+	<div class="twelve columns">
+		<a href="{{ site.baseurl }}/">JANE FINETTE</a>
+		<ul class="text-right">
+			<li>{% if page.url != '/about/index.html' %}<a href="{{ site.baseurl }}/about/">{% endif %}ABOUT{% if page.url != '/about/index.html' %}</a>{% endif %}</li>
+			<li>{% if page.url != '/work/index.html' %}<a href="{{ site.baseurl }}/work/">{% endif %}WORK{% if page.url != '/work/index.html' %}</a>{% endif %}</li>
+			<li><a href="http://blog.janefinette.com/">BLOG</a></li>
+			<li>{% if page.url != '/contact/index.html' %}<a href="{{ site.baseurl }}/contact/">{% endif %}CONTACT{% if page.url != '/contact/index.html' %}</a>{% endif %}</li>
+			<li><span id="twitter"><a href="https://twitter.com/janefinette"> </a></span></li>
+		</ul>
 	</div>
 </div>
+<!-- NAVIGATION -->
