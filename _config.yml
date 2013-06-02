@@ -1,4 +1,5 @@
 url: http://janefinette.com
+baseurl: 
 markdown: rdiscount
 exclude:
 - CNAME
