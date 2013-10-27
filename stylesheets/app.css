@@ -45,7 +45,7 @@ a:hover {
 #header li {
 	display: inline; 
 	vertical-align: middle;
-	padding-right: 8px;
+	padding-right: 12px;
 	font-size: 17px;
 	font-weight: 300; }
 
@@ -57,6 +57,10 @@ a:hover {
 
 #header li a:hover {
 	color: #222; }
+
+#header img {
+	position: relative;
+	top: 10px; }
 
 #twitter a {
 	display: inline-block;
@@ -75,15 +79,27 @@ a:hover {
 	background-size: cover; }
 
 #homeTag h1 {
-	padding-top: 12.5%;
+	margin-top: 12.5%;
 	text-align: center;
+	font-size: 35px;
 	font-weight: 700;
-	color: #FFF; }
+	color: white;
+	padding: 3%;
+	background-color: rgba(0,0,0,0.25); }
 
 #homeTag hr {
-	border: 4px solid #FFF;
+	border: 3px solid #FFF;
 	width: 30%;
-	margin: 0 auto 17px auto; }
+	margin: 17px auto; }
+
+
+/* -----------------------------------------
+   About
+----------------------------------------- */
+#headerCoaching {
+	height: 250px;
+	background: white url(../images/headerCoaching.jpg) no-repeat center top;
+	margin-bottom: 25px; }
 
 
 /* -----------------------------------------
@@ -109,29 +125,25 @@ a:hover {
 	width: 214px;
 	height: 214px;
 	border: 1px solid #DDD; }
-	
-.small-container img {
-	filter: none;
-	-webkit-filter: grayscale(0);
-	opacity: 1 }
 
-.small-container img:hover {
-	filter: url(filters.svg#grayscale);
-	filter: gray;
-	-webkit-filter: grayscale(1);
+.small-container-back {
+	margin-top: -219px;
+	padding: 0 5px;
+	visibility: hidden; }
+
+.small-container:hover .small-container-back {
+	visibility: visible; }
+
+.small-container:hover .small-container-front img {
 	opacity: 0.10; 
 	-webkit-transition: opacity .25s ease-in-out;
 	-moz-transition: opacity .25s ease-in-out;
 	transition: opacity .25s ease-in-out; }
 
-.small-container div {
-	margin-top: -219px;
-	padding: 0 5px; }
-
-.small-container h5 {
+.small-container-back h5 {
 	margin-top: 0; }
 
-.small-container p {
+.small-container-back p {
 	font-size: 15px; }
 
 /* -----------------------------------------

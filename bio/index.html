@@ -1,14 +1,20 @@
 ---
 layout: default
-title: Work
-id: work
+title: Bio
+id: bio
 current:
- - url: communityhacks.png
-   company: Community Hacks
-   role: Founder & Organizer
+ - url: janefinette.png
+   company: Jane Finette Coaching
+   role: Executive Coach
    country: USA
-   info: Meetup group for community leaders, organizers, and managers
-   link: http://www.meetup.com/Community-Hacks/
+   info: I coach executives and startup founders to reach their full potential.
+   link: http://janefinette.com/coaching/
+ - url: equanimitycoaching.png
+   company: Equanimity Coaching
+   role: Founder & Coach
+   country: USA
+   info: Equanimity provides equine guided coaching for both individuals and teams.
+   link: http://equanimitycoaching.com/
  - url: mentorforgood.png
    company: Mentor for Good
    role: Co-Founder
@@ -104,6 +110,11 @@ other:
    info: Power of Networks
    date: June 2013
    link: http://www.weownitsummit.org/
+ - url: communityhacks.png
+   title: Community Hacks
+   info: Founder & Organizer, Meetup group for community leaders, organizers, and managers
+   date: Ongoing
+   link: http://www.meetup.com/Community-Hacks/
 ---
 <div id="headerWork"></div>
 
@@ -113,8 +124,10 @@ other:
       {% for pic in page.current %}
       <li>
         <div class="small-container">
-          {% if pic.link != null %}<a href="{{ pic.link }}">{% endif %}<img src="{{ site.baseurl }}/images/workCurrent/{{ pic.url }}" alt="{{ pic.company }}">{% if pic.link != null %}</a>{% endif %}
+          <div class="small-container-front">
+            {% if pic.link != null %}<a href="{{ pic.link }}">{% endif %}<img src="{{ site.baseurl }}/images/workCurrent/{{ pic.url }}" alt="{{ pic.company }}">{% if pic.link != null %}</a>{% endif %}
           <div>
+          <div class="small-container-back">
             <h5>{{ pic.company }}</h5>
             <p>
             	Role: {{ pic.role }}<br />
@@ -139,8 +152,10 @@ other:
       {% for pic in page.past %}
       <li>
         <div class="small-container">
-          {% if pic.link != null %}<a href="{{ pic.link }}">{% endif %}<img src="{{ site.baseurl }}/images/workPast/{{ pic.url }}" alt="{{ pic.company }}">{% if pic.link != null %}</a>{% endif %}
-          <div>
+          <div class="small-container-front">
+            {% if pic.link != null %}<a href="{{ pic.link }}">{% endif %}<img src="{{ site.baseurl }}/images/workPast/{{ pic.url }}" alt="{{ pic.company }}">{% if pic.link != null %}</a>{% endif %}
+          </div>
+          <div class="small-container-back">
             <h5>{{ pic.company }}</h5>
             <p>
             	Role: {{ pic.role }}<br />
@@ -165,8 +180,10 @@ other:
       {% for pic in page.other %}
       <li>
         <div class="small-container">
-          {% if pic.link != null %}<a href="{{ pic.link }}">{% endif %}<img src="{{ site.baseurl }}/images/workOther/{{ pic.url }}" alt="{{ pic.company }}">{% if pic.link != null %}</a>{% endif %}
+          <div class="small-container-front">
+            {% if pic.link != null %}<a href="{{ pic.link }}">{% endif %}<img src="{{ site.baseurl }}/images/workOther/{{ pic.url }}" alt="{{ pic.company }}">{% if pic.link != null %}</a>{% endif %}
           <div>
+          <div class="small-container-back">
             <h5>{{ pic.title }}</h5>
             <p>
                Date: {{ pic.date }}<br />
@@ -180,6 +197,6 @@ other:
    </div>
    <div class="three columns text-right pullquote">
       <h3>Other</h3>
-      <p>I write and speak about community, participation and force multipliers. Here's a recent selection.</p>
+      <p>I write and speak about leadership, community, and participation. Here's a recent selection.</p>
    </div>
 </div>
