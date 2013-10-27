@@ -60,7 +60,8 @@ a:hover {
 
 #header img {
 	position: relative;
-	top: 10px; }
+	top: 10px;
+	padding-right: 6px; }
 
 #twitter a {
 	display: inline-block;
