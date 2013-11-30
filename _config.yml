@@ -1,5 +1,11 @@
+encoding: UTF-8
+timezone: America/Los_Angeles
+
 url: http://janefinette.com
 baseurl: 
+
 markdown: rdiscount
+
 exclude:
 - CNAME
+- README.md
