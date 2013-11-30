@@ -9,3 +9,4 @@ markdown: rdiscount
 exclude:
 - CNAME
 - README.md
+- /scss/
