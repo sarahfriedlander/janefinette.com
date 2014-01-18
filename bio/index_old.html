@@ -1,0 +1,183 @@
+---
+layout: default
+title: Bio
+id: bio
+current:
+ - url: sarahfriedlander.jpg
+   company: SFG Marketing
+   role: Marketing Consultant
+   country: USA/Chile
+   info: XX.
+   link: http://sarah.cl/marketing
+ - url: air802.jpg
+   company: Equanimity Coaching
+   role: Founder & Coach
+   country: USA
+   info: Equanimity provides equine guided coaching for both individuals and teams.
+   link: http://equanimitycoaching.com/
+ - url: mentorforgood.png
+   company: Mentor for Good
+   role: Co-Founder
+   country: USA
+   info: Coaching social entrepreneurs over our kitchen table
+   link: http://mentorforgood.org/
+past:
+ - url: gobee.jpg
+   company: GoBee
+   role: Engagement Marketing Manager
+   country: Australia
+   info: Practical Online Business Education for Entrepreneurs
+   link: http://www.mygobee.com/
+ - url: intemedio.jpg
+   company: Intemedio
+   role: Business Development Manager
+   country: Australia/USA
+   info: Customized Training Solutions For Your Business
+   link: http://www.intemedio.com/
+ - url: tigabytes.jpg
+   company: Tigabytes
+   role: Marketing Manager
+   country: Chile
+   info: Google Enterprise Partners
+   link: http://www.tigabytes.com
+ - url: founderinstitute.jpg
+   company: Founder Institute
+   role: Marketing Manager
+   country: Chile
+   info: Helping Founders to Build Great Companies
+   link: http://www.fi.co
+ - url: firsttuesday.jpg
+   company: First Tuesday Americas
+   role: Marketing Manager
+   country: Chile
+   info: Inter-personal networking forum for venture capitalists and entreprenuers
+   link: http://www.ft.la
+ - url: monki.jpg
+   company: mon.ki
+   role: Marketing Manager
+   country: USA & Chile
+   info: Discover the world with the help of your friends
+   link: http://www.mon.ki/
+ - url: fundacionmustakis.jpg
+   company: Fundación Mustakis
+   role: Social Media Consultant
+   country: Chile
+   info: Dedicada a la promoción de la educación, el arte, la cultura y las humanidades, entre los juventud.
+   link: http://www.fundacionmustakis.com
+ - url: xx.jpg
+   company: 
+   role: 
+   country: 
+   info: 
+   link: 
+ - url: xx.jpg
+   company: 
+   role: 
+   country: 
+   info: 
+   link: 
+other:
+- url: XX.jpg
+   title: XX
+   info: XX
+   date: XX
+   link: XX
+- url: XX.jpg
+   title: XX
+   info: XX
+   date: XX
+   link: XX
+- url: XX.jpg
+   title: XX
+   info: XX
+   date: XX
+   link: XX
+- url: XX.jpg
+   title: XX
+   info: XX
+   date: XX
+   link: XX
+---
+<div id="headerWork"></div>
+
+<div class="row">
+	<div class="nine columns">
+		<ul class="block-grid three-up">
+      {% for pic in page.current %}
+      <li>
+        <div class="small-container">
+          <div class="small-container-front">
+            {% if pic.link != null %}<a href="{{ pic.link }}">{% endif %}<img src="{{ site.baseurl }}/images/workCurrent/{{ pic.url }}" alt="{{ pic.company }}">{% if pic.link != null %}</a>{% endif %}
+          <div>
+          <div class="small-container-back">
+            <h5>{{ pic.company }}</h5>
+            <p>
+            	Role: {{ pic.role }}<br />
+            	Country: {{ pic.country }}<br />
+            	Info: {{ pic.info }}
+            </p>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+		</ul>
+	</div>
+	<div class="three columns text-right pullquote">
+		<h3>Current</h3>
+      <p>Life is full. I'm living and breathing what I care about most - empowering people to be great and make a difference.</p>
+	</div>
+</div>
+
+<div class="row workPadding">
+	<div class="nine columns">
+		<ul class="block-grid three-up">
+      {% for pic in page.past %}
+      <li>
+        <div class="small-container">
+          <div class="small-container-front">
+            {% if pic.link != null %}<a href="{{ pic.link }}">{% endif %}<img src="{{ site.baseurl }}/images/workPast/{{ pic.url }}" alt="{{ pic.company }}">{% if pic.link != null %}</a>{% endif %}
+          </div>
+          <div class="small-container-back">
+            <h5>{{ pic.company }}</h5>
+            <p>
+            	Role: {{ pic.role }}<br />
+            	Country: {{ pic.country }}<br />
+            	Info: {{ pic.info }}
+            </p>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+		</ul>
+	</div>
+	<div class="three columns text-right pullquote">
+		<h3>Past</h3>
+		<p>I've had a very blessed marketing career across various geographies (United States and Chile) and areas: technology marketing, community and engagement marketing, social media, marketing communications, project management and design. Here's a shortened overview, but if you want the lengthier version head on over to my <a href="http://www.linkedin.com/in/sarahfriedlander/">LinkedIn profile</a>.</p>
+	</div>
+</div>
+
+<div class="row workPadding">
+   <div class="nine columns">
+      <ul class="block-grid three-up">
+      {% for pic in page.other %}
+      <li>
+        <div class="small-container">
+          <div class="small-container-front">
+            {% if pic.link != null %}<a href="{{ pic.link }}">{% endif %}<img src="{{ site.baseurl }}/images/workOther/{{ pic.url }}" alt="{{ pic.company }}">{% if pic.link != null %}</a>{% endif %}
+          <div>
+          <div class="small-container-back">
+            <h5>{{ pic.title }}</h5>
+            <p>
+               Date: {{ pic.date }}<br />
+               {{ pic.info }}
+            </p>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+      </ul>
+   </div>
+   <div class="three columns text-right pullquote">
+      <h3>Hobbies</h3>
+      <p>While not living and breathing marketing, here are some of the other items that drive me and keep me with a big smile on my face.</div>
+</div>
