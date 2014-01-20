@@ -97,19 +97,30 @@ a:hover {
 /* -----------------------------------------
    About
 ----------------------------------------- */
+#headerAbout {
+	height: 250px;
+	background: white url(../images/headers/headerAbout.jpg) no-repeat center top;
+	margin-bottom: 25px; }
+	
+
+/* -----------------------------------------
+   Chile
+----------------------------------------- */
+#headerChile {
+	height: 250px;
+	background: white url(../images/headers/headerChile.jpg) no-repeat center top;
+	margin-bottom: 25px; }
+	
+/* -----------------------------------------
+   Marketing
+----------------------------------------- */
 #headerMarketing {
 	height: 250px;
 	background: white url(../images/headers/headerMarketing.jpg) no-repeat center top;
 	margin-bottom: 25px; }
 
 
-/* -----------------------------------------
-   About
------------------------------------------ */
-#headerAbout {
-	height: 250px;
-	background: white url(../images/headers/headerAbout.jpg) no-repeat center top;
-	margin-bottom: 25px; }
+
 
 /* -----------------------------------------
    Work
