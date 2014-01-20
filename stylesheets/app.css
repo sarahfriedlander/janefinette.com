@@ -99,7 +99,7 @@ a:hover {
 ----------------------------------------- */
 #headerMarketing {
 	height: 250px;
-	background: white url(../images/headerMarketing.jpg) no-repeat center top;
+	background: white url(../images/headers/headerMarketing.jpg) no-repeat center top;
 	margin-bottom: 25px; }
 
 
@@ -108,7 +108,7 @@ a:hover {
 ----------------------------------------- */
 #headerAbout {
 	height: 250px;
-	background: white url(../images/headerAbout.jpg) no-repeat center top;
+	background: white url(../images/headers/headerAbout.jpg) no-repeat center top;
 	margin-bottom: 25px; }
 
 /* -----------------------------------------
@@ -116,7 +116,7 @@ a:hover {
 ----------------------------------------- */
 #headerWork {
 	height: 250px;
-	background: white url(../images/headerWork.jpg) no-repeat center top;
+	background: white url(../images/headers/headerWork.jpg) no-repeat center top;
 	margin-bottom: 25px; }
 
 .workPadding {
@@ -152,7 +152,7 @@ a:hover {
 ----------------------------------------- */
 #headerBlog {
 	height: 250px;
-	background: white url(../images/headerBlog.jpg) no-repeat center top;
+	background: white url(../images/headers/headerBlog.jpg) no-repeat center top;
 	margin-bottom: 25px; }
 
 /* -----------------------------------------
@@ -160,7 +160,7 @@ a:hover {
 ----------------------------------------- */
 #headerAidan {
 	height: 250px;
-	background: white url(../images/headerAidan.jpg) no-repeat center top;
+	background: white url(../images/headers/headerAidan.jpg) no-repeat center top;
 	margin-bottom: 25px; }
 
 
@@ -169,7 +169,7 @@ a:hover {
 ----------------------------------------- */
 #headerContact {
 	height: 250px;
-	background: white url(../images/headerContact.jpg) no-repeat center top;
+	background: white url(../images/headers/headerContact.jpg) no-repeat center top;
 	margin-bottom: 25px; }
 
 /* -----------------------------------------
@@ -177,5 +177,5 @@ a:hover {
 ----------------------------------------- */
 #header404 {
 	height: 250px;
-	background: white url(../images/header404.jpg) no-repeat center top;
+	background: white url(../images/headersheader404.jpg) no-repeat center top;
 	margin-bottom: 25px; }
