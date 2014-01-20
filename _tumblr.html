@@ -9,25 +9,25 @@
 	<!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=device-width" />
 
-	<title>Jane Finette : Blog {block:PostSummary}: {PostSummary}{/block:PostSummary}</title>
+	<title>Sarah Friedlander García : Blog {block:PostSummary}: {PostSummary}{/block:PostSummary}</title>
 		
 	<!-- Included CSS Files (Compressed) -->
-	<link rel="stylesheet" href="http://janefinette.com/stylesheets/foundation.min.css" />
-	<link rel="stylesheet" href="http://janefinette.com/stylesheets/app.css" />
+	<link rel="stylesheet" href="http://sarah.cl/stylesheets/foundation.min.css" />
+	<link rel="stylesheet" href="http://sarah.cl/stylesheets/app.css" />
 
-	<script src="http://janefinette.com/javascripts/modernizr.foundation.js"></script>
+	<script src="http://sarah.cl/javascripts/modernizr.foundation.js"></script>
 
 	<!-- RSS Feed -->
 	<link rel="alternate" type="application/rss+xml" href="{RSS}" />
 
 	<!-- The all-so-important FavIcon -->
-	<link rel="icon" type="image/png" href="http://janefinette.com/images/favicon.png" />
+	<link rel="icon" type="image/png" href="http://sarah.cl/images/favicon.png" />
 
 	<!-- Facebook Open Graph -->
-	<meta property="og:site_name" content="JANE FINETTE" />
+	<meta property="og:site_name" content="SARAH FRIEDLANDER GARCÍA" />
 	<meta property="og:title" content="{block:PostSummary}{PostSummary}{/block:PostSummary}" />
 	<meta property="og:url" content="{Permalink}" />
-	<meta property="og:image" content="http://janefinette.com/images/fb_logo.png" />
+	<meta property="og:image" content="http://sarah.cl/images/fb_logo.png" />
 
 	<!-- Google Analytics -->
 	<script type="text/javascript">
@@ -47,14 +47,14 @@
 <!-- NAVIGATION -->
 <div class="row" id="header">
 	<div class="twelve columns">
-		<img src="http://janefinette.com/images/logo.png" alt="Keep Calm and Carry On" />
-		<a href="http://janefinette.com/">JANE FINETTE</a>
+		<img src="http://sarah.cl/images/logo.png" alt="SLOGAN HERE" />
+		<a href="http://sarah.cl/">SARAH FRIEDLANDER GARCÍA</a>
 		<ul class="text-right">
-			<li><a href="http://janefinette.com/coaching/">COACHING</a></li>
-			<li><a href="http://janefinette.com/about/">ABOUT ME</a></li>
-			<li><a href="http://janefinette.com/bio/">BIO</a></li>
+			<li><a href="http://sarah.cl/marketing/">MARKETING</a></li>
+			<li><a href="http://sarah.cl/about/">ABOUT ME</a></li>
+			<li><a href="http://sarah.cl/bio/">BIO</a></li>
 			<li>BLOG</li>
-			<li><a href="http://janefinette.com/contact/">CONTACT</a></li>
+			<li><a href="http://sarah.cl/contact/">CONTACT</a></li>
 			<li><span id="twitter"><a href="https://twitter.com/sarahfriedland"> </a></span></li>
 		</ul>
 	</div>
@@ -70,7 +70,7 @@
 	<div class="row">
 		<div class="twelve columns">
 			{block:PermalinkPage} <!-- Show this only when we're on the article view, not the list view -->
-				<h2><a href="http://blog.janefinette.com/" title="See more articles">Blog</a> &rarr; {block:PostSummary}{PostSummary}{/block:PostSummary}</h2>
+				<h2><a href="http://blog.sarah.cl/" title="See more articles">Blog</a> &rarr; {block:PostSummary}{PostSummary}{/block:PostSummary}</h2>
 			{/block:PermalinkPage}			
 
 			{block:IndexPage} <!-- Show this only when we're on the list view, not the article view -->
@@ -87,7 +87,7 @@
 			<div class="blogMeta">
 				{block:Date}<p>{ShortDayOfWeek}, {ShortMonth} {DayOfMonth}{DayOfMonthSuffix}, {Year}</p>{/block:Date}
 				<p><a class="dsq-comment-count" href="{Permalink}#disqus_thread" article_id="{PostID}">Comments</a><script type="text/javascript">
-					var disqus_shortname = 'janefinette';
+					var disqus_shortname = 'sarahelizabeth';
 					/* * * DON'T EDIT BELOW THIS LINE * * */
 					(function () {
 						var s = document.createElement('script'); s.async = true;
@@ -97,13 +97,65 @@
 					}());
 				</script></p>
 				{block:HasTags}<p><strong>Tags:</strong><br />{block:Tags}<span class="secondary radius label"><a href="{TagURLChrono}">{Tag}</a></span> {/block:Tags}</p>{/block:HasTags}
-				{block:PermalinkPage}<p><a class="tiny radius blue button" href="http://blog.janefinette.com/">&larr; Back</a></p>{/block:PermalinkPage}
+				{block:PermalinkPage}<p><a class="tiny radius blue button" href="http://blog.sarah.cl/">&larr; Back</a></p>{/block:PermalinkPage}
 			</div>
 		</div>
 		<hr />
 	</div>
 	{/block:Text}
 
+	{block:Quote}
+	<div class="row">
+		<div class="nine columns">
+			<h2><a href="{Permalink}" title="Quote of the Day">Quote of the Day</a></h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="nine columns">
+			<blockquote>{Quote}{block:Source}<cite>{Source}</cite>{/block:Source}</blockquote>
+		</div>
+	{/block:Quote}
+
+	{block:Link}
+	<div class="row">
+		<div class="nine columns">
+			<h2><a href="{URL}">{Name}</a></h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="nine columns">
+			{block:Description}{Description}{/block:Description}
+			<p><strong>Link:</strong> <a href="{URL}">{URL}</a></p>
+		</div>
+	{/block:Link}
+
+	{block:Photo}
+	<div class="row">
+		<div class="nine columns">
+			<h2><a href="{Permalink}" title="Foto del día">Video del día</a></h2>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="nine columns">
+			<p><img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"></p>
+			{block:Caption}<p>{Caption}</p>{/block:Caption}
+		</div>
+	{/block:Photo}
+
+	{block:Video}
+	<div class="row">
+		<div class="nine columns">
+			<h2><a href="{Permalink}" title="Video del día">Video del día</a></h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="nine columns">
+			<p><div class="flex-video">{Video-500}</div></p>
+			{block:Caption}<p>{Caption}</p>{/block:Caption}
+		</div>
+	{/block:Video}
+	
 {/block:Posts}
 
 <!-- DISQUS -->
@@ -112,7 +164,7 @@
 	<div class="nine columns">
 		<div id="disqus_thread"></div>
 		<script type="text/javascript">
-			var disqus_shortname = 'janefinette';
+			var disqus_shortname = 'sarahelizabeth';
 			var disqus_url = '{Permalink}';
 			var disqus_title = '{block:PostTitle}{PostTitle}{/block:PostTitle}';
 	
@@ -138,7 +190,7 @@
 			{block:NextPage}<a class="small radius secondary button" href="{NextPage}">&larr; Older</a>{/block:NextPage}
 			{block:PreviousPage}&nbsp;&nbsp;<a class="small radius secondary button" href="{PreviousPage}">Newer &rarr;</a>{/block:PreviousPage}
 		{/block:Pagination}
-		<span style="float:right;"><a class="small radius secondary button" href="http://blog.janefinette.com/archive">Archive</a></span>
+		<span style="float:right;"><a class="small radius secondary button" href="http://blog.sarah.cl/archive">Archive</a></span>
 	</div>
 	<div class="three columns">
 		<div style="margin-top:-12px;">
@@ -152,14 +204,14 @@
 <!-- CONTENT -->
 
 <hr />
-<div class="text-center"><p>Made with <a href="http://finette.com/" style="color:red;">&hearts;</a> in Saratoga, CA.</div>
+<div class="text-center"><p>Hecho con <img src="http://sarah.cl/images/heart.png"> desde Santiago de Chile</div>
 
 <!-- Included JS Files (Compressed) -->
-<script src="http://janefinette.com/javascripts/jquery.js"></script>
-<script src="http://janefinette.com/javascripts/foundation.min.js"></script>
+<script src="http://sarah.cl/javascripts/jquery.js"></script>
+<script src="http://sarah.cl/javascripts/foundation.min.js"></script>
 
 <!-- Initialize JS Plugins -->
-<script src="http://janefinette.com/javascripts/app.js"></script>
+<script src="http://sarah.cl/javascripts/app.js"></script>
 
 </body>
 </html>
