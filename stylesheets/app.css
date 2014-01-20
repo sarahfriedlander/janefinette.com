@@ -156,6 +156,15 @@ a:hover {
 	margin-bottom: 25px; }
 
 /* -----------------------------------------
+   Aidan
+----------------------------------------- */
+#headerAidan {
+	height: 250px;
+	background: white url(../images/headerAidan.jpg) no-repeat center top;
+	margin-bottom: 25px; }
+
+
+/* -----------------------------------------
    Contact
 ----------------------------------------- */
 #headerContact {
