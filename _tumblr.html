@@ -24,7 +24,7 @@
 	<link rel="icon" type="image/png" href="http://sarah.cl/images/favicon.png" />
 
 	<!-- Facebook Open Graph -->
-	<meta property="og:site_name" content="SARAH FRIEDLANDER GARCÍA" />
+	<meta property="og:site_name" content="SARAH FRIEDLANDER G." />
 	<meta property="og:title" content="{block:PostSummary}{PostSummary}{/block:PostSummary}" />
 	<meta property="og:url" content="{Permalink}" />
 	<meta property="og:image" content="http://sarah.cl/images/fb_logo.png" />
@@ -48,7 +48,7 @@
 <div class="row" id="header">
 	<div class="twelve columns">
 		<img src="http://sarah.cl/images/logo.png" alt="SLOGAN HERE" />
-		<a href="http://sarah.cl/">SARAH FRIEDLANDER GARCÍA</a>
+		<a href="http://sarah.cl/">SARAH FRIEDLANDER G.</a>
 		<ul class="text-right">
 			<li><a href="http://sarah.cl/marketing/">MARKETING</a></li>
 			<li><a href="http://sarah.cl/about/">ABOUT ME</a></li>
@@ -127,6 +127,7 @@
 			{block:Description}{Description}{/block:Description}
 			<p><strong>Link:</strong> <a href="{URL}">{URL}</a></p>
 		</div>
+		</div>
 	{/block:Link}
 
 	{block:Photo}
@@ -140,7 +141,8 @@
 		<div class="nine columns">
 			<p><img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"></p>
 			{block:Caption}<p>{Caption}</p>{/block:Caption}
-		</div>
+				</div>
+				<hr />
 	{/block:Photo}
 
 	{block:Video}
@@ -154,6 +156,7 @@
 			<p><div class="flex-video">{Video-500}</div></p>
 			{block:Caption}<p>{Caption}</p>{/block:Caption}
 		</div>
+		<hr />
 	{/block:Video}
 	
 {/block:Posts}
