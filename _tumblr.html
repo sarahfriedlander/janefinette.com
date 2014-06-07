@@ -1,0 +1,107 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Jane Finette | Blog{block:PostSummary} | {PostSummary}{/block:PostSummary}</title>
+	<link rel="stylesheet" href="http://www.janefinette.com/assets/css/style.css" />
+	<link rel="icon" type="image/png" href="http://www.janefinette.com/assets/img/favicon.png" />
+	<script src="http://www.janefinette.com/assets/js/vendor/modernizr.js"></script>
+	<link rel="alternate" type="application/rss+xml" href="{RSS}" />
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:site_name" content="JANE FINETTE" />
+	<meta property="og:title" content="{block:PostSummary}{PostSummary}{/block:PostSummary}" />
+	<meta property="og:url" content="{Permalink}" />
+	<meta property="og:image" content="http://janefinette.com/images/fb_logo.png" />
+
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-30954843-1']);
+		_gaq.push(['_setDomainName', 'janefinette.com']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+<body>
+
+<div id="masthead" data-magellan-expedition="fixed">
+	<div class="row">
+		<div class="large-12 columns">
+			<a href="http://www.janefinette.com/"><img src="http://www.janefinette.com/assets/img/janefinette.svg" alt="Jane Finette" /></a>
+			<dl class="sub-nav">
+				<dd><a href="http://janefinette.com/index.html#about">ABOUT</a></dd>
+				<dd><a href="http://janefinette.com/index.html#vita">VITA</a></dd>
+				<dd><a href="http://janefinette.com/index.html#work">WORK</a></dd>
+				<dd class="active"><a href="http://blog.janefinette.com/">BLOG</a></dd>
+				<dd><a href="http://janefinette.com/index.html#contact">CONTACT</a></dd>
+			</dl>
+		</div>
+	</div>
+</div>
+
+<!-- MAIN TUMBLR CODE -->
+{block:Posts} <!-- tumblr starts here -->
+{block:Text}
+<div class="row">
+	<div class="large-12 columns">
+		{block:Title}<h3><a href="{Permalink}" title="{Title}">{Title}</a></h3>{/block:Title}
+		<p class="meta">{block:Date}{ShortDayOfWeek}, {ShortMonth} {DayOfMonth}{DayOfMonthSuffix}, {Year}{/block:Date}{block:HasTags} | Tags: {block:Tags}<a href="{TagURLChrono}">{Tag}</a> {/block:Tags}{/block:HasTags}</p>
+		{Body}
+		<hr>
+	</div>
+</div>
+{/block:Text}
+{/block:Posts}
+<!-- MAIN TUMBLR CODE -->
+
+<!-- SINGLE PAGE VIEW ONLY -->
+{block:PermalinkPage}
+<div class="row">
+	<div class="large-12 columns text-center">
+		<h6><a href="http://blog.janefinette.com/" title="See more articles">Read more on my Blog &rarr;</a></h6>
+	</div>
+</div>
+{/block:PermalinkPage}
+<!-- SINGLE PAGE VIEW ONLY -->
+
+<!-- PAGINATION -->
+{block:IndexPage} <!-- Show this only when we're on the list view, not the article view -->
+<div class="row">
+	<div class="small-4 columns">
+	{block:Pagination}
+		{block:NextPage}<h6><a href="{NextPage}">&larr; Older</a></h6>{/block:NextPage}
+	{/block:Pagination}
+	</div>
+	<div class="small-4 columns text-center">
+		<h6>Page {CurrentPage} of {TotalPages} | <a href="http://blog.janefinette.com/archive">Archive</a></h6>
+	</div>
+	<div class="small-4 columns text-right">
+	{block:Pagination}
+		{block:PreviousPage}<h6><a href="{PreviousPage}">Newer &rarr;</a></h6>{/block:PreviousPage}
+	{/block:Pagination}
+	</div>
+</div>
+{/block:IndexPage}
+<!-- PAGINATION -->
+
+<div class="row" id="footer">
+	<div class="larger-12 columns text-center">
+		<p>Made with &hearts; in Saratoga, CA.</p>
+	</div>
+</div>
+		
+<script src="http://www.janefinette.com/assets/js/vendor/jquery.js"></script>
+<script src="http://www.janefinette.com/assets/js/foundation/min/foundation-ck.js"></script>
+<script src="http://www.janefinette.com/assets/js/foundation/min/foundation.magellan-ck.js"></script>
+<script>
+	$(document).foundation();
+</script>
+
+</body>
+</html>
