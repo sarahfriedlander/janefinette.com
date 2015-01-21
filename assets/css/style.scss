@@ -1,0 +1,124 @@
+---
+---
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+// Load Google Webfont
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic);
+
+// Import Normalize
+@import "normalize";
+
+// Settings
+@import "foundation/settings";
+
+// We use these to control various global styles
+$body-bg: #eee;
+$body-font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-font-weight: 300;
+$paragraph-font-weight: 300;
+$header-font-weight: 400;
+$primary-color: #d00000;
+$hr-border-color: #ccc;
+$hr-margin: rem-calc(40);
+
+
+// Behold, here are all the Foundation components.
+@import
+//  "foundation/components/accordion",
+//  "foundation/components/alert-boxes",
+  "foundation/components/block-grid",
+//  "foundation/components/breadcrumbs",
+//  "foundation/components/button-groups",
+//  "foundation/components/buttons",
+//  "foundation/components/clearing",
+//  "foundation/components/dropdown",
+//  "foundation/components/dropdown-buttons",
+//  "foundation/components/flex-video",
+//  "foundation/components/forms",
+	"foundation/components/grid",
+//  "foundation/components/inline-lists",
+//  "foundation/components/joyride",
+//  "foundation/components/keystrokes",
+//  "foundation/components/labels",
+	"foundation/components/magellan",
+//  "foundation/components/orbit",
+//  "foundation/components/pagination",
+//  "foundation/components/panels",
+//  "foundation/components/pricing-tables",
+//  "foundation/components/progress-bars",
+//  "foundation/components/reveal",
+//  "foundation/components/side-nav",
+//  "foundation/components/split-buttons",
+//  "foundation/components/sub-nav",
+//  "foundation/components/switch",
+//  "foundation/components/tables",
+//  "foundation/components/tabs",
+//  "foundation/components/thumbs",
+//  "foundation/components/tooltips",
+//  "foundation/components/top-bar",
+	"foundation/components/type";
+//  "foundation/components/offcanvas",
+//	"foundation/components/visibility";
+
+/*! ----------------------------------------
+	 janefinette.com LESS
+	 Copyright 2014, Pascal Finette
+	 http://finette.com
+	 Good artists copy, great artists steal
+	 Based on Foundation v5.2.3
+----------------------------------------- */
+// General styling
+strong { font-weight: $header-font-weight; }
+h3, h4, h5 { span { font-weight: $body-font-weight; } }
+
+// Section specific styling
+#header { img { width: 100vw; } }
+
+#masthead {
+	background-color: #222;
+	margin-bottom: rem-calc(40);
+	img {
+		height: 50px;
+		margin: 10px 0;
+	}
+}
+
+#vita { li { span { font-weight: $header-font-weight; } } }
+
+#contact { h4 { font-weight: $body-font-weight; } }
+
+#footer { color: #999; }
+
+.sub-nav {
+	@media #{$small-only} {
+		font-size: 1rem;
+	}
+	@media #{$medium-up} {
+		display: inline;
+		float: right;
+		font-size: 1.5rem;
+		line-height: 70px;
+	}
+	dd { 
+		font-weight: 200;
+		display: inline;
+		margin-right: 1.5rem;
+		a { color: white; }
+		a:hover { color: $primary-color; }
+	}
+	dd:last-child { margin-right: 0; }
+	dd.active { a { color: $primary-color; } }
+}
+
+.work-item {
+	background-color: #222;
+	margin-bottom: 2.5rem;
+	h5 {
+		color: $body-bg;
+		padding: 0.5rem 0.5rem 0 0.5rem;
+	}
+	p { 
+		color: $body-bg;
+		padding: 0.5rem; }
+}
