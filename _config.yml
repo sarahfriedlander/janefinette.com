@@ -1,18 +1,12 @@
-<<<<<<< HEAD
 encoding: UTF-8
 timezone: America/Santiago
-=======
-encoding: utf-8
-timezone: America/Los_Angeles
->>>>>>> FETCH_HEAD
 
 url: http://sarah.cl
 baseurl: 
 
-markdown: kramdown
+markdown: rdiscount
 
-sass:
-  sass_dir: /assets/_scss
-  style: :compressed
-
-exclude: [config.codekit, s3_website.yml, .DS_Store, /assets/_scss]
+exclude:
+- CNAME
+- README.md
+- /scss/
