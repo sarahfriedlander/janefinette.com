@@ -1,0 +1,160 @@
+
+/* link to import the contact form http://form.jotformeu.com/jsform/50564927345360 */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,300,600,400);
+
+.form-required {
+    display : none;
+}
+
+.form-textarea {
+    min-width : 100%;
+    border-radius : 3px;
+    min-height : 210px;
+    font-family : 'Open Sans', serif;
+    color : #333;
+}
+
+.form-line {
+    min-width : 100%;
+    margin-top : 0px;
+    margin-top : -27px;
+}
+
+.form-submit-button {
+    min-width : 100%;
+    color : #fff;
+    border-color : #ea623d;
+    background : #ea623d;
+}
+
+.form-buttons-wrapper {
+    max-width : 150px;
+}
+
+.jotform-form {
+    padding : 0;
+}
+
+.form-all {
+    padding : 0;
+}
+
+#id_1 {
+    padding-top : 0;
+    margin-top : 0;
+}
+
+.form-submit-button:hover, .form-submit-button:active {
+    color : #fff;
+    border-color : #2a272e;
+    background : #2a272e;
+}
+
+.form-all .qq-upload-button, .form-all .form-submit-button, .form-all .form-submit-reset, .form-all .form-submit-print {
+    font-size : 13px;
+}
+
+#input_2 {
+    text-shadow : none;
+    font-weight : 600;
+    font-size : 13px;
+    line-height : 13px;
+    padding : 11px 17px;
+    letter-spacing : 0.1em;
+    font-family : 'Open Sans', sans-serif;
+    outline : none!important;
+    box-shadow : none;
+}
+
+.form-label.form-label-left {
+    font-weight : 300;
+    font-size : 13px;
+    margin : 10px 0 7px 0;
+    letter-spacing : 0.1em;
+    font-family : 'Open Sans', sans-serif;
+    color : #666;
+    min-width : 100%;
+}
+
+#id_2 {
+
+}
+
+.form-button-error {
+    display : none;
+}
+
+.form-line-error .form-error-message {
+    display : none;
+}
+
+.form-line-error {
+    background : none;
+}
+
+.form-textbox {
+    border-radius : 3px;
+    font-family : 'Open Sans', serif;
+    color : #333;
+}
+
+#input_6 {
+    border-radius : 3px;
+}
+
+#label_1:after {
+    content : "(REQUIRED)";
+    color : #999;
+}
+
+#label_6:after {
+    content : "(REQUIRED)";
+    color : #999;
+}
+
+#label_5:after {
+    content : "(REQUIRED)";
+    color : #999;
+}
+
+.form-line-error input:not(#coupon-input), .form-line-error textarea, .form-line-error .form-validation-error {
+    border : 2px solid #bc3d3d;
+    -webkit-box-shadow : 0 0 0 #bc3d3d;
+    -moz-box-shadow : 0 0 0 #bc3d3d;
+    box-shadow : 0 0 0 #bc3d3d;
+}
+
+.form-line.form-line-active {
+    background-color : transparent;
+}
+
+.form-textbox, .form-textarea, .form-radio-other-input, .form-checkbox-other-input, .form-captcha input {
+    box-shadow : 0 0 0 #eee inset;
+    -webkit-box-shadow : 0 0 0 #eee inset;
+    -moz-box-shadow : 0 0 0 #eee inset;
+}
+
+.form-line-active {
+    background : transparent;
+}
+
+.form-line-active input:focus, .form-line-active textarea:focus {
+    border : 2px solid #999;
+    -moz-box-shadow : 0 0 0 #999;
+    -webkit-box-shadow : 0 0 0 #999;
+    box-shadow : 0 0 0 #999;
+    outline : none!important;
+}
+
+.form-textarea {
+    padding : 10px 10px 3px 10px;
+}
+
+.form-textbox {
+    padding : 0 10px 2px 10px;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color : #fff!important;
+}
+
